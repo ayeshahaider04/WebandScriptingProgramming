@@ -2,7 +2,7 @@
 
 /* General Styles */
 body {
-    background: linear-gradient(to bottom, #FFCCE5, #c50163);
+    background-image: linear-gradient(to bottom, #FFCCE5, #c50163);
     /* Light Pink Background */
     font-family: 'Arial', sans-serif;
     margin: 0;
