@@ -1,45 +1,87 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>INFR3120 Thursday Class</title>
-    </head>   
-    <body>
-        <div id="wrapper">
-            <div id="banner">
-                <h1>Welcome to the Class INFR3120 Thursday Section</h1>
-                <div id="left-column"> 
-                    <h3>Links...</h3> 
-                    <ul> 
-                        <li> 
-                            <a href="http://www.w3schools.com/">Reference:W3Schools</a>
-                        </li> 
-                        <li> 
-                            <a href="feedback.html">Feedback Form</a>
-                        </li> 
-                        <li> 
-                            <a href="video.html">Video</a>
-                        </li> 
-                    </ul> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Another Student</title>
+
+    <!-- Link to CSS files for different viewports -->
+    <link rel="stylesheet" href="style-mobile.css" media="only screen and (max-width: 600px)">
+    <link rel="stylesheet" href="style-tablet.css" media="only screen and (min-width: 601px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="style-desktop.css" media="only screen and (min-width: 1025px)">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar for Navigation -->
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Sections -->
+        <main>
+            <!-- Home Section -->
+            <section id="home" class="section-home">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Hello, I am <strong>Another Student</strong>, a passionate cybersecurity enthusiast.</p>
+            </section>
+
+            <!-- About Me Section -->
+            <section id="about" class="section-about">
+                <h1>About Me</h1>
+                <img src="images/student-photo.jpg" alt="Another Student" class="profile-pic">
+                <p>I enjoy learning about networks and securing digital spaces. Here’s a short video about me:</p>
+                <video width="640" height="360" controls poster="images/video-poster.jpg">
+                    <source src="videos/intro-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section-projects">
+                <h1>My Projects</h1>
+                <div class="project">
+                    <h2>Project 1</h2>
+                    <p>Description of Project 1 - Technologies: HTML, CSS, JavaScript</p>
                 </div>
-                <div id="right-column"> 
-                    <h2>Right Column Heading Here </h2> 
-                    <p>Right column content here </p>
-                    <div class="box"><p>Box content</p></div> 
-                    <div class="box"><p>Box content</p></div> 
-                    <div class="box"><p>Box content</p></div> 
-                    <div class="box"><p>Box content</p></div> 
-                    <div class="box"><p>Box content</p></div> 
-                    <div class="box"><p>Box content</p></div> 
-                </div> 
+                <div class="project">
+                    <h2>Project 2</h2>
+                    <p>Description of Project 2 - Technologies: Python, Network Security</p>
                 </div>
-                <!--The clear class style clears (removes) float--> 
-                <div class="clear"></div> 
-                <div id="footer"> 
-                    <h5>Site by Web Development Thursday Class</h5> 
-            </div>
-        </div>
-    </body>
-    
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section-contact">
+                <h1>Contact Me</h1>
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <input type="submit" value="Send">
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Contact: student.email@example.com</p>
+            <p>&copy; 2024 Another Student. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
 </html>

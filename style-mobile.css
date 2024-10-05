@@ -1,0 +1,75 @@
+/* Mobile Styles (max-width: 600px) */
+
+/* General Styles */
+body {
+    background-color: #FFCCE5;
+    /* Light Pink Background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: block;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #FF66B2;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #FF99CC;
+    border-radius: 5px;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+    background-color: #FFC0D9;
+    color: black;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+}
+
+.profile-pic {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #FF66B2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
