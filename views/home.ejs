@@ -1,34 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - <%= pageTitle %></title>
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/stylesheets/style-desktop.css" media="only screen and (min-width: 1025px)">
-    <link rel="stylesheet" href="/stylesheets/style-tablet.css" media="only screen and (min-width: 601px) and (max-width: 1024px)">
-    <link rel="stylesheet" href="/stylesheets/style-mobile.css" media="only screen and (max-width: 600px)">
-</head>
-<body>
-    <div class="wrapper">
-        <aside class="sidebar">
-            <nav>
-                <ul>
-                    <li><a href="/" class="active">Home</a></li>
-                    <li><a href="/about">About Me</a></li>
-                    <li><a href="/projects">Projects</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <main>
-            <%- body %> <!-- This is where the page-specific content will be rendered -->
-        </main>
-        <footer>
-            <p>Contact: ayesha.haider@ontariotechu.net</p>
-            <p>&copy; 2024 Ayesha Haider. All rights reserved.</p>
-        </footer>
-    </div>
-</body>
-</html>
+<%- include('layout', { pageTitle: 'Home' }) %>
+<section id="home" class="section-home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hello, I am <strong>Ayesha Haider</strong>, and I am an aspiring Network Engineer. I enjoy learning about networks and designing them efficiently.</p>
+</section>
+
